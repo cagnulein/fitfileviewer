@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 60;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -11,6 +11,8 @@
 		87E8CE422BA3702800A4A5A3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87E8CE412BA3702800A4A5A3 /* ContentView.swift */; };
 		87E8CE442BA3702A00A4A5A3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 87E8CE432BA3702A00A4A5A3 /* Assets.xcassets */; };
 		87E8CE472BA3702A00A4A5A3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 87E8CE462BA3702A00A4A5A3 /* Preview Assets.xcassets */; };
+		87E8CE512BA370B200A4A5A3 /* FIT in Frameworks */ = {isa = PBXBuildFile; productRef = 87E8CE502BA370B200A4A5A3 /* FIT */; };
+		87E8CE532BA3717200A4A5A3 /* example.fit in Resources */ = {isa = PBXBuildFile; fileRef = 87E8CE522BA3717200A4A5A3 /* example.fit */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +21,7 @@
 		87E8CE412BA3702800A4A5A3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		87E8CE432BA3702A00A4A5A3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		87E8CE462BA3702A00A4A5A3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		87E8CE522BA3717200A4A5A3 /* example.fit */ = {isa = PBXFileReference; lastKnownFileType = file; path = example.fit; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +29,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				87E8CE512BA370B200A4A5A3 /* FIT in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -51,6 +55,7 @@
 		87E8CE3E2BA3702800A4A5A3 /* fitfileviewer */ = {
 			isa = PBXGroup;
 			children = (
+				87E8CE522BA3717200A4A5A3 /* example.fit */,
 				87E8CE3F2BA3702800A4A5A3 /* fitfileviewerApp.swift */,
 				87E8CE412BA3702800A4A5A3 /* ContentView.swift */,
 				87E8CE432BA3702A00A4A5A3 /* Assets.xcassets */,
@@ -83,6 +88,9 @@
 			dependencies = (
 			);
 			name = fitfileviewer;
+			packageProductDependencies = (
+				87E8CE502BA370B200A4A5A3 /* FIT */,
+			);
 			productName = fitfileviewer;
 			productReference = 87E8CE3C2BA3702800A4A5A3 /* fitfileviewer.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +119,9 @@
 				Base,
 			);
 			mainGroup = 87E8CE332BA3702800A4A5A3;
+			packageReferences = (
+				87E8CE4F2BA370B200A4A5A3 /* XCLocalSwiftPackageReference "FitSDKRelease_21.84.00/objcpp" */,
+			);
 			productRefGroup = 87E8CE3D2BA3702800A4A5A3 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -127,6 +138,7 @@
 			files = (
 				87E8CE472BA3702A00A4A5A3 /* Preview Assets.xcassets in Resources */,
 				87E8CE442BA3702A00A4A5A3 /* Assets.xcassets in Resources */,
+				87E8CE532BA3717200A4A5A3 /* example.fit in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -344,6 +356,20 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCLocalSwiftPackageReference section */
+		87E8CE4F2BA370B200A4A5A3 /* XCLocalSwiftPackageReference "FitSDKRelease_21.84.00/objcpp" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = FitSDKRelease_21.84.00/objcpp;
+		};
+/* End XCLocalSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		87E8CE502BA370B200A4A5A3 /* FIT */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = FIT;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 87E8CE342BA3702800A4A5A3 /* Project object */;
 }
